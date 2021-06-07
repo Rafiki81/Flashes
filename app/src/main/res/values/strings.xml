@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Flashes</string>
+    <string name="forgot_password">Have you Forgot your Password?</string>
+    <string name="or">Or</string>
+    <string name="new_user_register_now">New User? Register Now</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="top_icon">TOP ICON</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="signUp">Sign Up</string>
+    <string name="username">UserName</string>
+    <string name="login_email_empty">Email cannot be blank</string>
+    <string name="login_password_empty">Password cannot be blank</string>
+    <string name="password_error_less_than">Password must have more than 4 characters</string>
+    <string name="signUp_username_empty">Username cannot be empty</string>
+    <string name="signUp_not_an_email">The email introduced is wrong</string>
+    <string name="signUp_email_empty">Email cannot be empty</string>
+    <string name="signUp_password_empty">Password cannot be empty</string>
+    <string name="titleRow">Title</string>
+    <string name="film_list">Film List</string>
+    <string name="comment_list">Comment List</string>
+</resources>
