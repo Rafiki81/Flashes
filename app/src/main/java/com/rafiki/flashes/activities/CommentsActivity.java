@@ -35,6 +35,10 @@ public class CommentsActivity extends AppCompatActivity implements CommentAdapte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
+        setUpView();
+    }
+
+    private void setUpView(){
         toolbar = findViewById(R.id.toolbar);
         recyclerView = findViewById(R.id.recyclerview);
         Intent intent = getIntent();
@@ -63,7 +67,7 @@ public class CommentsActivity extends AppCompatActivity implements CommentAdapte
             public void onResponse(Call<List<FilmComment>> call, Response<List<FilmComment>> response) {
                 if(response.code() == 200){
                     List<FilmComment> commentsResponse = response.body();
-                    Log.d("FLASHES", "Lista de Comentarios " + response.body().toString());
+                    Log.d("FLASHES", "Comments List " + response.body().toString());
                     commentAdapter.setData(commentsResponse);
                     recyclerView.setAdapter(commentAdapter);
                 }else{

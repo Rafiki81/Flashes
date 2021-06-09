@@ -1,6 +1,8 @@
 package com.rafiki.flashes.model;
 
-public class FilmComment {
+import java.io.Serializable;
+
+public class FilmComment implements Serializable {
 
     private Integer id;
     private String title;

@@ -20,4 +20,17 @@
     <string name="titleRow">Title</string>
     <string name="film_list">Film List</string>
     <string name="comment_list">Comment List</string>
+    <string name="list_comment">List Comments</string>
+    <string name="comment">Comment</string>
+    <string name="createFilm">Create Film</string>
+    <string name="film_menu">Film Menu</string>
+    <string name="comment_title">Comment title</string>
+    <string name="cancel">Cancel</string>
+    <string name="note">Note</string>
+    <string name="film_title">Title</string>
+    <string name="film_director">Director</string>
+    <string name="film_synopsis">Synopsis</string>
+    <string name="film_runningtime">Running Time</string>
+    <string name="create_film">Create Film</string>
+    <string name="genre">Genre</string>
 </resources>

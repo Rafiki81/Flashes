@@ -35,10 +35,10 @@ public class FilmsActivity extends AppCompatActivity implements FilmAdapter.Clic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_films);
         setUpView();
-        getAllFilms();
     }
 
     public void setUpView() {
+        getAllFilms();
         toolbar = findViewById(R.id.toolbar);
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

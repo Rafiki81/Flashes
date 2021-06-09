@@ -30,21 +30,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
-        android:text="title"
+        android:text="@string/createFilm"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/topView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvDirector"
+    <EditText
+        android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
-        android:text="director"
+        android:hint="@string/film_title"
         android:drawablePadding="16dp"
         android:ems="10"
         android:padding="16dp"
@@ -53,100 +53,101 @@
         app:layout_constraintTop_toBottomOf="@+id/view5"
         />
 
-    <TextView
-        android:id="@+id/tvSynopsis"
-        android:layout_width="352dp"
-        android:layout_height="60dp"
+    <EditText
+        android:id="@+id/tvDirector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-
-        android:text="synopsis"
+        android:background="@drawable/round_border"
+        android:hint="@string/film_director"
         android:drawablePadding="16dp"
         android:ems="10"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        />
+
+    <EditText
+        android:id="@+id/tvSynopsis"
+        android:layout_width="349dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/film_synopsis"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDirector" />
 
-    <TextView
+    <EditText
         android:id="@+id/tvRunningTime"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
-        android:text="runningTime"
+        android:hint="@string/film_runningtime"
         android:drawablePadding="16dp"
+        android:inputType="number"
         android:ems="10"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSynopsis" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSynopsis"
+        />
 
-    <TextView
+    <EditText
         android:id="@+id/tvGenre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
-        android:text="genre"
+        android:hint="@string/genre"
         android:drawablePadding="16dp"
         android:ems="10"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRunningTime" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRunningTime"
+        />
 
-    <RatingBar
-        android:id="@+id/ratingStars"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnCreateFilm"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:drawablePadding="16dp"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:stepSize="0.5"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_bg"
+        android:text="@string/create_film"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvGenre" />
 
     <Button
-        android:id="@+id/btnComment"
+        android:id="@+id/btnCancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_bg"
-        android:text="@string/comment"
+        android:text="@string/cancel"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingStars" />
-
-    <Button
-        android:id="@+id/btnListComment"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/round_bg"
-        android:text="@string/list_comment"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnComment" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateFilm" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -157,7 +158,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnListComment">
+        app:layout_constraintTop_toBottomOf="@+id/btnCancel">
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
